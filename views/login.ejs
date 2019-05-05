@@ -1,0 +1,26 @@
+<% include partials/header.ejs %>
+
+<div class="container mt-4">
+    <h1 class="display-4 text-center">User Login</h1>
+    <div>
+        <form action="/login" class="px-4 py-3" method="POST">
+            <div class="row">
+                <div class="col-10 offset-2">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="username" class="form-control" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary ml-5">Submit</button>
+                    <div class="form-group mt-3 ml-5">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<% include partials/footer.ejs %>

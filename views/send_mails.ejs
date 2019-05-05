@@ -1,0 +1,18 @@
+<% include partials/header.ejs %>
+
+<form action="/send_mails" method="POST">
+    <div class="container mt-4">
+        <div class="display-4 text-center">
+            <h1>User Type</h1>
+            <a href="/logout" class="btn btn-outline-primary btn-sm">Logout</a>
+        </div>
+        <select name="category">
+            <option value="admin">Admin</option>
+            <option value="student">Student</option>
+            <option value="volunteer">Volunteer</option>
+        </select>
+        <input type="submit" name="Send Mail" value="Send Mail" class="btn btn-sm btn-outline-success">
+    </div>
+</form>
+
+<% include partials/footer.ejs %>
